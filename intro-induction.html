@@ -42,24 +42,38 @@
 <section class="content">
 
   <h3 class="posttitle">
-    <a class="nodec" href="/hello-world.html" rel="bookmark" title="Permalink to Hello World!">
-      Hello World!
+    <a class="nodec" href="/intro-induction.html" rel="bookmark" title="Permalink to Introduction to Induction">
+      Introduction to Induction
     </a>
   </h3>
 
   <div class="postinfo">
-    <p class="published" title="2013-10-27T00:00:00">
-      Sun 27 October 2013
+    <p class="published" title="2013-11-15T00:00:00">
+      Fri 15 November 2013
     </p>
 
   </div><!-- .postinfo -->
 
   <div class="article">
-    <p>Hi, welcome to the personal website of Sugata Acharjya. I've been meaning to write a blog for some time now. Well I guess better late than never, right?</p>
-<p>I'm currently on the Professional Experience Year (PEY), completing internships and trying to determine my direction in life. It's always scary to try something new, but I welcome that change. In fact, I've taken one the more extreme options - I've left my hometown of Toronto, Ontario to go the complete opposite end of Canada.  </p>
-<p>Currently, I'm living in Vancouver, British Columbia  and let me tell you it's everything I was told it would be - beautiful, serene, and friendly. But don't take my word for it, check out my <a href="http://www.flickr.com/photos/106089860@N03/">Flickr</a> page to see more.</p>
-<p>So, what'll be the topic of this blog? I don't know...whatever's on my mind I suppose. I'd wager there's going to be a good amount of Computer Science and Statistics though, some football mixed in for good measure.</p>
-<p>Stay tuned for more updates.</p>
+    <p>Induction is a very familiar concept for a CS student, due to it being stressed in almost every introductory theoretical CS course. I'd like to cover it again in some detail. </p>
+<p>I like to think of induction as the foundation for the theoretical side of computer science. It can be both rigorous and simple, depending on how you approach a problem. </p>
+<p>Here are some of my most common steps in a proof by induction are:</p>
+<div class="highlight"><pre><span class="mf">1.</span> <span class="n">Constructing</span> <span class="n">a</span> <span class="n">hypothesis</span><span class="p">.</span>
+<span class="mf">2.</span> <span class="n">Making</span> <span class="n">an</span> <span class="n">initial</span> <span class="n">test</span><span class="p">.</span>
+<span class="mf">3.</span> <span class="n">Coming</span> <span class="n">up</span> <span class="n">with</span> <span class="n">the</span> <span class="n">lemma</span><span class="p">.</span>
+<span class="mf">4.</span> <span class="n">Following</span> <span class="n">through</span> <span class="n">with</span> <span class="n">a</span> <span class="n">inductive</span> <span class="n">step</span><span class="p">.</span>
+<span class="mf">5.</span> <span class="n">Concluding</span> <span class="n">the</span> <span class="n">main</span> <span class="n">idea</span><span class="p">.</span>
+</pre></div>
+
+
+<p>It is often up to the individual writing the proof to strengthen each of these steps. There are various types of induction as well, such as simple (or mathematical), complete and structural.</p>
+<p>I learn best by doing examples so let's work through one:</p>
+<p>Question: Use Mathematical Induction to prove that for every natural number n, 7<sup>n</sup>-1 is a multiple of 6.</p>
+<p><img alt="P(n)" src="/img/intro-ind/p_n.png" title="P(n)" />
+<img alt="Base Case" src="/img/intro-ind/b_c.png" title="Base Case" />
+<img alt="Induction Steps" src="/img/intro-ind/i_s.png" title="Induction Steps" />
+<img alt="Conclusion" src="/img/intro-ind/conc.png" title="Conclusion" /></p>
+<p>So now we have a good example of simple induction at work.</p>
   </div><!-- .content -->
 
 </section>
