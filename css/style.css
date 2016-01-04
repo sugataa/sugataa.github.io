@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Paytone+One);
+body {
+  background-color: #FBFCFE;
+}
+
+#name {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) skewX(-6deg) rotate(-12deg) skewY(6deg) skewX(-12deg);
+}
+
+#text {
+  padding: 0; margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 150px;
+  font-family: "Paytone One";
+  font-weight: bold;
+  color: white;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+  
+  text-shadow: 0px 0px 0 red;
+  /* transition: .3s ease; */
+}
+
+body {
+  font-family: "Paytone One";
+  color: #111;
+  font-size: 100%;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden; 
+}
+
+#container {
+  margin-top: 5.000em;
+  margin-left: auto;
+  margin-right: auto; 
+}
