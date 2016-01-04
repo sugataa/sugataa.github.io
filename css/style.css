@@ -17,6 +17,7 @@ body {
   font-size: 150px;
   font-family: "Paytone One";
   font-weight: bold;
+  letter-spacing: -10;
   color: white;
    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
    -webkit-text-stroke-width: 1px;
@@ -36,7 +37,40 @@ body {
 }
 
 #container {
-  margin-top: 5.000em;
+  width: 50.000em;
+  padding-top: 6.250em;
   margin-left: auto;
   margin-right: auto; 
 }
+
+#banner-container {
+  padding-top: 6.250em; 
+}
+
+
+#links a,
+#external a {
+  color: #ccc;
+  text-decoration: none; 
+}
+
+#links a:hover ,
+#external a:hover {
+  color: #999; 
+}
+
+#links ul {
+  text-align: center;
+  margin-top: 300px;
+  width: 37.500em;
+  margin-left: auto;
+  margin-right: auto; }
+
+#links li {
+  font-family: "Montserrat";
+  letter-spacing: -1;
+  list-style-type: none;
+  color: #999;
+  font-size: 1.875em;
+  float: left;
+  width: 23%; }
