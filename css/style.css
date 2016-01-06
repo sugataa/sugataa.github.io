@@ -72,3 +72,67 @@ body {
   float: left;
   width: 24%; 
 }
+
+/* About Page */
+
+#logo {
+  /*font-family: "Montserrat";*/
+  font-size: 1.563em;
+  letter-spacing: -2;
+  color: #ddd;
+  font-weight: 700;
+  display: inline;
+  padding: 0.188em 0.500em 0.188em 0.375em; 
+}
+
+#logo:hover {
+  color: #333; 
+}
+
+#image-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 50em; 
+}
+
+#image-wrapper img {
+  display: block;
+  margin-top: 3.750em;
+  margin-bottom: 3.750em;
+  width: 40em !important;
+  margin-left: auto !important;
+  margin-right: auto !important; 
+}
+
+.h2-sub {
+  /*margin-left: auto;*/
+  margin-right: auto;
+  /*font-family: "ProximaNova-Bold";*/
+  font-size: 1.313em;
+  width: 22.08682em;
+  color: #222;
+  margin-top: 1.875em; 
+}
+
+#article p {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none; 
+}
+
+a:hover {
+  color: #999; 
+}
+
+#header {
+    position: relative !important; } 
+}
+
+.h1-sub {
+  width: 14.5em; 
+}
