@@ -75,6 +75,37 @@ body {
 
 /* About Page */
 
+#container2 {
+  margin-top: 5.000em;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#header2 {
+  padding-top: 0.625em;
+  position: absolute;
+  left: 0.313em;
+  top: 0.313em;
+  position: relative !important; 
+}
+
+#article {
+  font-family: "ProximaNova";
+  font-size: 1.125em;
+  line-height: 1.5em;
+  color: #373737; }
+
+#article a {
+  color: #e33; }
+
+#article p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 29em;
+  margin-top: 1.375em;
+  margin-bottom: 1.375em;
+  overflow-x: hidden; }
+
 #logo {
   /*font-family: "Montserrat";*/
   font-size: 1.563em;
@@ -127,10 +158,6 @@ a {
 
 a:hover {
   color: #999; 
-}
-
-#header {
-    position: relative !important; } 
 }
 
 .h1-sub {
