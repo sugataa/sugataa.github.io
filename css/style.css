@@ -140,6 +140,7 @@ body {
 .h2-sub {
   margin-left: auto;
   margin-right: auto;
+  font-family: "Paytone One";
   /*font-family: "ProximaNova-Bold";*/
   font-size: 1.313em;
   width: 22.08682em;
@@ -175,3 +176,15 @@ a:hover {
 #article a:hover {
   border-bottom: 0.063em solid #e33; 
 }
+
+ul {
+  margin-left: auto;
+  margin-right: auto;
+  width: 29em; }
+
+ol {
+  margin-left: auto;
+  margin-right: auto;
+  width: 29em;
+  list-style-type: decimal;
+  type: "1"; }
