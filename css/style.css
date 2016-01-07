@@ -138,13 +138,13 @@ body {
 }
 
 .h2-sub {
-  /*margin-left: auto;*/
+  margin-left: auto;
   margin-right: auto;
   /*font-family: "ProximaNova-Bold";*/
   font-size: 1.313em;
   width: 22.08682em;
   color: #222;
-  margin-top: 1.875em; 
+  margin-top: 1.875em;
 }
 
 #article p {
@@ -162,4 +162,16 @@ a:hover {
 
 .h1-sub {
   width: 14.5em; 
+  margin-top: 1em;
+  margin-bottom: 0em;
+  font-size: 2.250em;
+  color: #373737;
+  line-height: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 12.88889em;*/
+}
+
+#article a:hover {
+  border-bottom: 0.063em solid #e33; 
 }
