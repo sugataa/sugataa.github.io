@@ -47,13 +47,15 @@ body {
 
 
 #links a,
-#external a {
+#external a,
+#contact-links a {
   color: #ccc;
   text-decoration: none; 
 }
 
 #links a:hover ,
-#external a:hover {
+#external a:hover,
+#contact-links a:hover {
   color: #999; 
 }
 
@@ -62,7 +64,8 @@ body {
   margin-top: 3.5em;
   width: 42.500em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto; 
+}
 
 #links li {
   /*font-family: "Montserrat";*/
@@ -72,6 +75,23 @@ body {
   font-size: 1.875em;
   float: left;
   width: 24%; 
+}
+
+#contact-links ul {
+  text-align: center;
+  margin-top: 3.5em;
+  width: 82.500em;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#contact-links li {
+  letter-spacing: 10;
+  list-style-type: none;
+  color: #999;
+  font-size: 1.875em;
+  float: left;
+  width: 24%;
 }
 
 /* About Page */
@@ -181,11 +201,80 @@ a:hover {
 ul {
   margin-left: auto;
   margin-right: auto;
-  width: 29em; }
+  width: 29em; 
+}
 
 ol {
   margin-left: auto;
   margin-right: auto;
   width: 29em;
   list-style-type: decimal;
-  type: "1"; }
+  type: "1"; 
+}
+
+/*=============== Writing ===================== */
+
+#writing-list {
+  margin-top: 3.125em;
+  width: 37.500em;
+  margin-left: auto;
+  margin-right: auto; }
+
+#writing-list a {
+  color: #444; }
+
+#writing-list a:hover {
+  color: #444; }
+
+.post-name {
+  font-size: 40;
+  /*font-family: "ProximaNova";*/
+  letter-spacing: -2;
+  font-weight: 700; }
+
+.post-date {
+  font-size: 1.250em;
+  /*font-family: "ProximaNova";*/
+  letter-spacing: -1;
+  display: inline;
+  color: #aaa;
+  float: right; }
+
+#writing-title,
+#contact-title {
+  font-size: 1.875em;
+  /*font-family: "ProximaNova";*/
+  text-align: center;
+  letter-spacing: -2;
+  font-weight: 700;
+  color: #444;
+  padding-bottom: 0.625em; }
+
+.post {
+  overflow: hidden;
+  padding: 0.625em 1.875em 0.625em 1.875em;
+  margin-bottom: 2.500em; 
+}
+
+.post:hover {
+  background: #fafafd;
+  outline: 0.063em solid #dedede; 
+}
+
+
+#image-wrapper-contact {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 50em; 
+}
+
+#image-wrapper-contact img {
+  display: block;
+  /*margin-top: 3.750em;*/
+  /*margin-bottom: 3.750em;*/
+  width: 4em !important;
+  margin-left: auto !important;
+  margin-right: auto !important; 
+}
