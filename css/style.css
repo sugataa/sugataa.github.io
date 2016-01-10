@@ -138,7 +138,7 @@ body {
 }
 
 #logo:hover {
-  color: #333; 
+  color: #FF2D54; 
 }
 
 #image-wrapper {
@@ -216,7 +216,7 @@ ol {
 
 #writing-list {
   margin-top: 3.125em;
-  width: 37.500em;
+  width: 47.500em;
   margin-left: auto;
   margin-right: auto; }
 
@@ -227,10 +227,12 @@ ol {
   color: #444; }
 
 .post-name {
-  font-size: 40;
+  font-size: 35px;
   /*font-family: "ProximaNova";*/
   letter-spacing: -2;
-  font-weight: 700; }
+  /*font-weight: 700; */
+  padding-bottom: 15px;
+}
 
 .post-date {
   font-size: 1.250em;
@@ -277,4 +279,11 @@ ol {
   width: 4em !important;
   margin-left: auto !important;
   margin-right: auto !important; 
+}
+
+#hs {
+  display: inline-block;
+  width: 5%;
+  height: auto;
+  margin: auto;
 }
