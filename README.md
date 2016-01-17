@@ -1,6 +1,6 @@
 # Sugata's Personal Website
 
-![alt tag](https://raw.githubusercontent.com/sugataa/sugataa.github.io/master/img/screenshot.png)
+![alt tag](https://raw.githubusercontent.com/sugataa/sugataa.github.io/master/img/jan17_screenshot.png)
 
 My online profile. Bio. Resume. Articles. Contact Info.
 
