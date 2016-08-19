@@ -1,8 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Paytone+One);
 
 body {
-  background-color: #FBFCFE;
+  background-color: #F1F4F9;
 }
+
+#canvas-wrap { position:relative;}
+#canvas-wrap canvas { position:absolute; top:0; left:0; z-index:0 }
 
 body {
   font-family: "Paytone One";
@@ -14,11 +17,20 @@ body {
   line-height: 1.4;
 }
 
-#name {
+#name #text{
+
   transform: skewX(-6deg) rotate(-12deg) skewY(6deg) skewX(-12deg);
 }
 
+#name div {
+  transform: skewX(-0deg) rotate(-0deg) skewY(0deg) skewX(-0deg);
+}
+
 #text {
+  margin: 20vh 20vw;
+  width: 55vw;
+  height: 40vh;
+  padding: 10vh 10vw;
   padding: 0; margin: 0;
   text-transform: uppercase;
   text-align: center;
@@ -36,7 +48,7 @@ body {
 
 #container {
   width: 50.000em;
-  padding-top: 6.250em;
+  padding-top: 1.250em;
   margin-left: auto;
   margin-right: auto; 
 }
@@ -129,7 +141,7 @@ body {
 
 #logo {
   /*font-family: "Montserrat";*/
-  font-size: 1.563em;
+  font-size: 2.5em;
   letter-spacing: -2;
   color: #ddd;
   font-weight: 700;
@@ -149,11 +161,30 @@ body {
   width: 50em; 
 }
 
+#profile-image {
+  width: 18.5em; 
+  margin-top: 1em;
+  margin-bottom: 0em;
+  font-size: 2.250em;
+  color: #373737;
+  line-height: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#profile-image img {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 8em; 
+}
+
 #image-wrapper img {
   display: block;
   margin-top: 3.750em;
   margin-bottom: 3.750em;
-  width: 40em !important;
+  width: 20em !important;
   margin-left: auto !important;
   margin-right: auto !important; 
 }
