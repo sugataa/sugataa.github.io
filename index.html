@@ -70,8 +70,8 @@
   fill();
 
   ctx.lineWidth = 20;
-  ctx.strokeStyle = '#1D98D3';
-  ctx.fillStyle = '#0087BD';
+  ctx.strokeStyle = '#C2DBF3';
+  ctx.fillStyle = '#1d96d3';
 
   function loop() {
 
@@ -161,6 +161,10 @@
 </head>
 <body>
 
+<!--   <div id="header2">
+    <a href="index.html"><div id="logo">SA</div></a>
+  </div> -->
+
 <div id="canvas-wrap">
   <canvas id="canvas"></canvas>
 
@@ -168,8 +172,21 @@
     <div id="banner-container">
 
       <div id="name">
-        <p id="text">Sugata!</p>
-        <div id="links">
+        <p id="text"><span>Sugata!</span></p>
+
+        <div id="mini-resume" class="flexcontainer">
+          <div>
+            <img class="profile-pic" src="img/profile.jpeg">
+          </div>
+          <div class="right-data">
+            <img src="img/ca.svg" style="border-radius:5%;"> &nbsp;U of T CS 
+            <br> Full-stack Generalist
+            <br> Launched <a href="http://stylefnf.com">Stylefnf</a>
+            <br> Work at Google
+          </div>
+        </div>
+
+        <div id="links" class="push-down">
           <ul>
             <!-- <li><a href="writing.html">writing</a></li> -->
             <li><a href="contact.html">blog</a></li>
@@ -181,28 +198,17 @@
           </ul>
         </div>
 
-        <div id="links">
+<!--         <div id="links" class="push-down">
           <ul>
-            <!-- <li><a href="writing.html">writing</a></li> -->
             <li><a href="https://twitter.com/sugata_a" target="_blank"><i class="icon-twitter" style="color:#4099FF;"></i></a></li>
             <li><a href="https://github.com/sugataa" target="_blank"><i class="icon-github-circled" style="color:#333;"></i></a></li>
             <li><a href="https://ca.linkedin.com/in/sugata-acharjya-b8463051" target="_blank"><i class="icon-linkedin-squared" style="color:#fff;"></i></a></li>
             <li><a href="mailto:sugata.acharjya@utoronto.ca"><i class="icon-mail" style="color:#fff;"></i></a></li>
-            <!-- <li><a href="mailto:sugata.acharjya@utoronto.ca">email</a></li> -->
-            <!-- <li><a href="contact.html">contact</a></li> -->
           </ul>
-        </div>
+        </div> -->
       </div>
 
-
-<!--       <div id="external">
-        <ul>
-          <li><a href="mailto:sugata.acharjya@utoronto.ca">email</a></li>
-          <li><a href="https://twitter.com/sugata_a">twitter</a></li>
-          <li><a href="https://github.com/sugataa">github</a></li>
-        </ul>
-      </div> -->
-
+      <!-- For Facebook's Crawling Algo -->
       <div style="display:none"><img src="img/jan17_screenshot.png"></div>
 
     </div>
