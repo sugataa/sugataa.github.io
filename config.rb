@@ -53,6 +53,10 @@ end
 
 activate :directory_indexes
 
+activate :syntax, line_numbers: true
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
+
 page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
 configure :development do
@@ -62,7 +66,7 @@ end
 # Methods defined in the helpers block are available in templates
 helpers do
   def strip_summary(html)
-    html.gsub(/<h1.?>.+<\/h1>/, "")
+    html.gsub(/<h1>.+<\/h1>/, "")
   end
 end
 

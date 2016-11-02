@@ -6,6 +6,12 @@ tags: example
 
 This is an example article. You probably want to delete it and write your own articles!
 
+```ruby
+def cool
+  puts "I'm cool"
+end
+```
+
 Lorem ipsum dolor sit amet, tollit assentior vix cu, nec commune hendrerit in, te odio consetetur mea. Quo ut mandamus facilisis vulputate, commodo epicurei vituperatoribus eos no. Quo id placerat atomorum reformidans, ex volutpat erroribus eam, eos deleniti expetenda rationibus ne. Wisi munere invidunt at nam, eam consul constituto ullamcorper ex. Vis ea timeam aeterno, putent fabulas offendit ius no, ad augue consulatu contentiones vis.
 
 Est molestie verterem detraxit ad. His laudem dicunt eu, usu rationibus philosophia ea, perfecto scriptorem duo an. Te odio efficiantur pri, aeterno dissentiunt an eum. Qualisque splendide mnesarchum ei nec. Mundi rationibus delicatissimi pri id, tation dolorum pro in. Duo et placerat reprimique, vel at eleifend referrentur. Sea ut numquam accommodare.
