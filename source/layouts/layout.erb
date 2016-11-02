@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <%= component "head.html.erb" %>
+  </head>
+  <body class="<%= page_classes %>">
+    <div id="fh5co-page">
+      <%= component "navbar.html.erb" %>
+      <div id="fh5co-main">
+        <%= yield %>
+      </div
+    </div>
+  </body>
+  <%= component "js.html.erb" %>
+</html>

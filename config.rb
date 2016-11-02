@@ -9,6 +9,13 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+set :fonts_dir, 'fonts'
+set :css_dir, 'stylesheets'
+set :images_dir, 'images'
+set :js_dir, 'javascripts'
+
+set :relative_links, true
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
@@ -23,7 +30,7 @@ page '/*.txt', layout: false
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
-
+  blog.permalink = '{title}'
   # blog.permalink = "{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
   blog.sources = "articles/{year}-{month}-{day}-{title}"
@@ -68,7 +75,23 @@ helpers do
   def strip_summary(html)
     html.gsub(/<h1>.+<\/h1>/, "")
   end
+
+  # Builds a page title from the article title + site title
+  def page_title
+    if current_article && current_article.title
+      current_article.title + ' | ' + config[:site_title]
+    else
+      config[:site_title]
+    end
+  end
+
+  # Renders component partials
+  def component(path, locals = {})
+    partial "components/#{path}", locals
+  end
 end
+
+set :url_root, "'https://sugataa.github.io ? https://sugataa.github.io : 'localhost:4567'}"
 
 activate :search_engine_sitemap,
          exclude_if: -> (resource) {
