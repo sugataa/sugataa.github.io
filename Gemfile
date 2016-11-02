@@ -20,3 +20,8 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
+
+gem 'middleman-minify-html'
+gem 'therubyracer' # faster JS compiles
+gem 'oj' # faster JS compiles
+gem 'middleman-search_engine_sitemap'

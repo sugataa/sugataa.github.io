@@ -26,15 +26,15 @@ activate :blog do |blog|
 
   # blog.permalink = "{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
-  # blog.sources = "{year}-{month}-{day}-{title}.html"
+  blog.sources = "articles/{year}-{month}-{day}-{title}"
   # blog.taglink = "tags/{tag}.html"
-  # blog.layout = "layout"
+  blog.layout = "article_layout"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
-  # blog.default_extension = ".markdown"
+  blog.default_extension = ".markdown"
 
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
@@ -70,11 +70,29 @@ helpers do
   end
 end
 
+activate :search_engine_sitemap,
+         exclude_if: -> (resource) {
+           # Exclude all paths from sitemap that are sub-date indexes
+           resource.path.match(/[0-9]{4}(\/[0-9]{2})*.html/)
+         },
+         default_change_frequency: 'weekly'
+
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+
+  # Enable cache buster
+  activate :asset_hash
+
+  activate :gzip
+  # Use relative URLs
+  # activate :relative_assets
+
+  activate :minify_html do |html|
+    html.remove_http_protocol = false
+  end
 end
