@@ -60,11 +60,11 @@ configure :development do
 end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def strip_summary(html)
+    html.gsub(/<h1.?>.+<\/h1>/, "")
+  end
+end
 
 # Build-specific configuration
 configure :build do
