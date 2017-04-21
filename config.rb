@@ -12,9 +12,6 @@ page '/*.txt',  layout: false
 # Disable directory_index for 404 page
 page '/404.html', directory_index: false
 
-# Add About Page
-page "/about/*", :layout => "about"
-
 ###
 # Helpers and extensions
 ###
@@ -58,6 +55,7 @@ set :site_title, 'Sugata Acharjya'
 set :site_subtitle, 'Smashing Life'
 set :profile_text, %q(Hi, I'm Sugata.)
 set :site_author, 'Sugata Acharjya'
+set :site_subtitle, 'Code · Data · Vibes'
 # Generate your own by running `rake id`
 set :site_id, 'uri:uuid:be86ac8f-e8f7-45b8-b270-6742c40a82f9'
 
@@ -91,4 +89,10 @@ configure :build do
 
   # Improve cacheability by using asset hashes in filenames
   activate :asset_hash
+end
+
+activate :deploy do |deploy|
+  deploy.build_before = true # runs build before deploying
+  deploy.deploy_method = :git
+  deploy.branch = 'master'
 end

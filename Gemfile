@@ -22,3 +22,4 @@ gem 'builder', '~> 3.0'
 # For markdown
 gem 'redcarpet', '~> 3.3'
 gem 'middleman-livereload'
+gem 'middleman-deploy'
