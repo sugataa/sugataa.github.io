@@ -32,7 +32,7 @@ helpers do
 end
 
 activate :blog do |blog|
-  blog.permalink = '{title}'
+  blog.permalink = '{title}.html'
   # Matcher for blog source files
   blog.sources = 'articles/{year}-{month}-{day}-{title}.html'
   blog.layout = 'article'
@@ -53,7 +53,7 @@ activate :vcs_time
 set :site_url, 'http://sugataa.github.io'
 set :site_title, 'Sugata Acharjya'
 set :site_subtitle, 'Smashing Life'
-set :profile_text, %q(Hi, I'm Sugata.)
+set :profile_text, %q(Hello, my name is Sugata.)
 set :site_author, 'Sugata Acharjya'
 set :site_subtitle, 'Code · Data · Vibes'
 # Generate your own by running `rake id`
