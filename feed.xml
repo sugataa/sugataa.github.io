@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Sugata Acharjya</title>
+  <subtitle>Code · Data · Vibes</subtitle>
+  <link href="http://sugataa.github.io/feed.xml" rel="self"/>
+  <link href="http://sugataa.github.io"/>
+  <id>uri:uuid:be86ac8f-e8f7-45b8-b270-6742c40a82f9</id>
+  <updated>2000-01-01T00:00:00-05:00</updated>
+  <author>
+    <name>Sugata Acharjya</name>
+  </author>
+  <rights>© Sugata Acharjya 2017</rights>
+</feed>
