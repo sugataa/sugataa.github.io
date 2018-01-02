@@ -1,0 +1,45 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My ~ Cool ~ Space Blog</title>
+    <%= stylesheet_link_tag "site" %>
+  </head>
+  <body>
+    <main role="main" class="container">
+      <aside class="side-nav">
+        <h1><%= link_to "My Blog", "/"%></h1>
+        <p>Join me on a journey through space and time</p>
+
+        <ul>
+          <% blog.tags.each do |tag, articles| %>
+            <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+          <% end %>
+        </ul>
+
+      </aside>
+      <section class="post-container">
+        <%= yield %>
+      </section>
+    </main>
+  </body>
+</html> -->
+
+<% wrap_layout :wrap do %>
+  <div class="col justify gap-4 xl-col xl-gap-0">
+    <!-- <% if current_page.url == "/" %>
+      <h1 class="logo">
+        <%= image_tag 'logo.svg', alt: 'Lord i/o' %>
+      </h1>
+    <% else %>
+      <a href="/" class="logo">
+        <%= image_tag 'logo.svg', alt: 'Lord i/o' %>
+      </a>
+    <% end %> -->
+    <div class="col justify gap-4">
+      <%= yield %>
+    </div>
+  </div>
+<% end %>
