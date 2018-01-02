@@ -18,6 +18,31 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+###
+# Environment settings
+###
+# Development-specific configuration
+configure :development do
+  # Reload the browser automatically whenever files change
+  activate :livereload
+end
+
+# Build-specific configuration
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+  activate :minify_html
+
+  # Improve cacheability by using asset hashes in filenames
+  activate :asset_hash
+end
+
+activate :deploy do |deploy|
+  deploy.build_before = true # runs build before deploying
+  deploy.deploy_method = :git
+  deploy.branch = 'master'
+end
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
